@@ -1,0 +1,8 @@
+{
+    "clientId": "BotId",
+	"guildId": "ServerId",
+    "token":"BotToken",
+    "LibrusLogin":"Librus Login",
+    "LibrusPassword":"Librus Password"
+
+}
