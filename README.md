@@ -19,7 +19,7 @@ Pobierz odpowiednie bibloteki:
 Odpowiednio wypełnij luki w pliku `config.json`
 ```bash
     "clientId": "Bot Id",
-	"guildId": "Server Id",
+    "guildId": "Server Id",
     "token":"Bot Token",
     "LibrusLogin":"Librus Login",
     "LibrusPassword":"Librus Password"
