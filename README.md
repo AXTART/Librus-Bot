@@ -29,7 +29,7 @@ Dodaj komendy do serwera discord:
     node deploy-commands.js
 ```
 ## Uruchomienie
-Uruchom program komędą w terminalu:
+Uruchom program komendą w terminalu:
 
 ```bash
   npm start
