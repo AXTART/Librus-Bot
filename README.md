@@ -11,7 +11,7 @@ Zainstalu projek z GitHuba:
 ```
 Pobierz odpowiednie bibloteki:
 ```bash
-  npm install --requirement.txt
+  npm install --locked
 ```
 
 ## Konfiguracja
