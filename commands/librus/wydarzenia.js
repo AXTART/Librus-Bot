@@ -3,13 +3,13 @@ const { LibrusLogin, LibrusPassword } = require('../../config.json');
 const Librus = require("librus-api");
 let lclient = new Librus();
 
-lclient.calendar.getCalendar().then((data) => {
-	module.exports = {
-		data: new SlashCommandBuilder()
-			.setName('wydarzenia')
-			.setDescription('Wyświetl najbliższe wydarzenie'),
-		async execute(interaction) {
-			lclient.authorize(LibrusLogin, LibrusPassword).then(function () {
+module.exports = {
+	data: new SlashCommandBuilder()
+		.setName('wydarzenia')
+		.setDescription('Wyświetl najbliższe wydarzenie'),
+	async execute(interaction) {
+		lclient.authorize(LibrusLogin, LibrusPassword).then(function () {
+			lclient.calendar.getCalendar().then((data) => {
 				let date = new Date().getDate();
 				lclient.calendar.getEvent(data[date][0].id).then((data2) => {
  					const Embed = new EmbedBuilder()
@@ -28,7 +28,6 @@ lclient.calendar.getCalendar().then((data) => {
 					interaction.reply({embeds: [Embed]});
 				});
 			});
-		},
-	};
-});
-
+		});
+	},
+};
