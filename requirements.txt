@@ -1,3 +1,0 @@
-Disord.js
-Librus-api
-librus-api-rewrited
