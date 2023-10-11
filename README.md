@@ -32,7 +32,7 @@ Dodaj komendy do serwera discord:
 Uruchom program komędą w terminalu:
 
 ```bash
-  node index.js
+  npm start
 ```
 
 
